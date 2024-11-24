@@ -1,4 +1,4 @@
-function merge<T extends object, P extends object>(objA: T, objB: P) {
+function merge<T extends object, P extends object>(objA: T, objB: P): object {
   return Object.assign(objA, objB);
 }
 
