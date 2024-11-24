@@ -1,35 +1,12 @@
-console.log("Hello ts.1");
+let month: string | number;
 
-type hw1 = {
-  age: number;
-  username: string;
-  toggle: boolean;
-  empty: null;
-  callback(a: number): number;
-};
+month = "July";
+month = 7;
 
-const hw01: hw1 = {
-  age: 50,
-  username: "Max",
-  toggle: true,
-  empty: null,
-  callback(a: number): number {
-    return 100 + a;
-  },
-};
+type yourGender = "male" | "female";
 
-const age: hw1 = 50;
-const username: hw1 = "Max";
-const toggle: hw1 = true;
-const empty: hw1 = null;
-const callback = (a: number): number => {
-  return 100 + a;
-};
+let gender: yourGender;
 
-// const age = 50;
-// const username = "Max";
-// const toggle = true;
-// const empty = null;
-// const callback = (a) => {
-//   return 100 + a;
-// };
+gender = "male";
+gender = "female";
+gender = "mutant"; // Error
